@@ -8,7 +8,7 @@
 ::     of the integer provided, assuming the string is 1-indexed (wtf). Literal
 ::     digits, if statements, for loops, and delayed expansion are not allowed.
 ::
-:: Author
+:: AUTHOR
 ::     Sintrode/ShadowThief
 ::------------------------------------------------------------------------------
 @echo off
