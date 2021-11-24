@@ -19,8 +19,8 @@ set /a two=one+one
 
 set /p "string=Enter a string: "
 set /p "limit=Enter the one-indexed character to stop at: "
-set "%string%=throw an error if the string is empty" || exit /b
-set "%limit%=throw an error if the limit is empty" || exit /b
+set "%string%=throw an error if the string is empty" %two%>nul || exit /b
+set "%limit%=throw an error if the limit is empty" %two%>nul || exit /b
 
 echo String: %string%
 echo Stop at char #: %limit%
