@@ -34,6 +34,7 @@ goto :loop
 :get_substring
 set /a index_label=counter+one
 call set "char=%%string:~%counter%,%one%%%"
+set "char=%char: =. %"
 set "%char%=throw an error if we've gone past the end of the string" %two%>nul || exit /b %one%
 echo %index_label%:"%char%"
 set /a exit_code=%index_label%/%limit%
